@@ -1,0 +1,49 @@
+[user]
+email = erikecoologic@gmail.com
+name = Erik Ecoologic
+
+[core]
+editor = vim
+# excludesfile = /home/erik/.gitignore
+
+[branch]
+autosetuprebase = always
+autosetupmerge = always
+
+
+[push]
+followTags = true
+
+[alias]
+praise = blame
+
+l1 = log --oneline
+lc = show --summary # Last Commit
+stats = shortlog -sn --all
+b = branch
+bl= "branch --sort=committerdate"
+st = status
+
+co = checkout
+sw = switch
+swm= checkout master
+
+d = diff
+dc = diff --cached
+dno = diff --name-only
+dnoh = diff --name-only HEAD^
+dh = diff HEAD^
+
+aa = add --all
+ca = commit --amend
+cane = commit --amend --no-edit
+cm = commit -m
+mm = merge origin master
+cwip = commit -m "WIP"
+# cfix = commit -m "Fix Specs"
+# cdoc = commit -m "Doc \\\[ci skip\\\]"
+cclean = commit -m 'Cleanup'
+rsh = reset --soft HEAD^
+
+p = pull
+pfwl = push --force-with-lease
