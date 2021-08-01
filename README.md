@@ -3,5 +3,8 @@
 ## Install
 
 ```shell
-./scripts/install-ansible.sh
+./scripts/install-ansible-ubuntu.sh
+# If the previous command ends with
+# "Installation completed successfully"
+
 ```
