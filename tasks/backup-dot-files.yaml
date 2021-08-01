@@ -1,0 +1,34 @@
+# - name: "Backup dot-files"
+- name: Ensure ~/tmp/
+  command: mkdir /home/erik/tmp/
+
+- copy:
+    src: /home/erik/.bash_aliases
+    dest: /home/erik/tmp/.bash_aliases
+    owner: erik
+    group: erik
+- copy:
+    src: /home/erik/.bashrc
+    dest: /home/erik/tmp/.bashrc
+    owner: erik
+    group: erik
+- copy:
+    src: /home/erik/.curlrc
+    dest: /home/erik/tmp/.curlrc
+    owner: erik
+    group: erik
+- copy:
+    src: /home/erik/.gemrc
+    dest: /home/erik/tmp/.gemrc
+    owner: erik
+    group: erik
+- copy:
+    src: /home/erik/.gitconfig
+    dest: /home/erik/tmp/.gitconfig
+    owner: erik
+    group: erik
+- copy:
+    src: /home/erik/.npmrc
+    dest: /home/erik/tmp/.npmrc
+    owner: erik
+    group: erik

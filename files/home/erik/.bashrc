@@ -1,3 +1,5 @@
+# test
+
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -116,8 +118,8 @@ fi
 # fi
 
 # sudo apt-get install -y git-core bash-completion
-# source /usr/share/bash-completion/completions/git
-# __git_complete g _git_checkout
+source /usr/share/bash-completion/completions/git
+__git_complete g _git_checkout
 
 #######################################
 # PS1 Git prompt from https://ezprompt.net/

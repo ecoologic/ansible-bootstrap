@@ -1,14 +1,15 @@
-# - name: "Copy ~/.files"
+# - name: "Copy dot-files"
 - copy:
     src: ./files/home/erik/.bash_aliases
     dest: /home/erik/.bash_aliases
     owner: erik
     group: erik
-- copy:
-    src: ./files/home/erik/.bashrc
-    dest: /home/erik/.bashrc
-    owner: erik
-    group: erik
+# Maybe better leave it specific to the system you're running
+# - copy:
+#     src: ./files/home/erik/.bashrc
+#     dest: /home/erik/.bashrc
+#     owner: erik
+#     group: erik
 - copy:
     src: ./files/home/erik/.curlrc
     dest: /home/erik/.curlrc
