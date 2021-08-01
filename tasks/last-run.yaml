@@ -1,0 +1,2 @@
+- name: "Store the last run time"
+  shell: "echo $(date) > tmp/last-run.txt"

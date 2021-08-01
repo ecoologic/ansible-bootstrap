@@ -2,4 +2,5 @@
 - hosts: localhost
   become: true
   tasks:
-    - include: "tasks/hello-world.yaml"
+    - include: "tasks/last-run.yaml"
+    # - include: "tasks/docker.yaml" # https://www.edureka.co/community/89944/ansible-install-docker-docker-container-multiple-machines
