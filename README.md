@@ -29,3 +29,14 @@ Run from root of the project, copies your dot-files, then you commit.
 ```
 
 If you add more dot-files, you need to update manually by looking at the occurrences of `bashrc`.
+
+### Manual Steps
+
+- Firefox extensions, pwd sync
+- Chrome extensions, pwd sync
+- Brave extensions
+- VS Code extensions
+- Rsync
+  - Documents
+  - Personal
+  - ssh keys
