@@ -5,6 +5,11 @@
     owner: erik
     group: erik
 - copy:
+    src: ./files/home/erik/.bashrc
+    dest: /home/erik/.bashrc
+    owner: erik
+    group: erik
+- copy:
     src: ./files/home/erik/.curlrc
     dest: /home/erik/.curlrc
     owner: erik
