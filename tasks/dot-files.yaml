@@ -1,4 +1,5 @@
 # - name: "Copy dot-files"
+# TODO: avoid dups
 - copy:
     src: ./files/home/erik/.bash_aliases
     dest: /home/erik/.bash_aliases

@@ -3,9 +3,9 @@
   become: true
   tasks:
     - include: "tasks/last-run.yaml"
-    - include: tasks/software/chrome.yaml
-    # - include: "tasks/software/vs-code.yaml" # TODO: needs snap, doesn't work in Docker
     - include: "tasks/backup-dot-files.yaml"
     - include: "tasks/dot-files.yaml"
     - include: "tasks/software/cli-utils.yaml"
+    - include: "tasks/software/vs-code.yaml"
+    - include: "tasks/software/chrome.yaml"
     - include: "tasks/software/development-tools.yaml"

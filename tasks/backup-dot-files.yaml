@@ -1,7 +1,7 @@
 # - name: "Backup dot-files"
-- name: Ensure ~/tmp/
-  command: mkdir /home/erik/tmp/
-
+# TODO: make idempotent
+# - name: Ensure ~/tmp/
+#   command: mkdir /home/erik/tmp/ || true
 - copy:
     src: /home/erik/.bash_aliases
     dest: /home/erik/tmp/.bash_aliases

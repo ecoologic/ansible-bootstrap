@@ -7,4 +7,5 @@
   when: ansible_facts.distribution == "Ubuntu"
   package:
     name:
+      - snapd
       - dconf-cli # Dump settings with `dconf dump / > settings.ini`
