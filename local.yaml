@@ -3,4 +3,6 @@
   become: true
   tasks:
     - include: "tasks/last-run.yaml"
+    - include: "tasks/dot-files.yaml"
     - include: "tasks/software/cli-utils.yaml"
+    - include: "tasks/software/development-tools.yaml"

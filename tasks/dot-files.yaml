@@ -1,0 +1,26 @@
+# - name: "Copy ~/.files"
+- copy:
+    src: ./files/home/erik/.bash_aliases
+    dest: /home/erik/.bash_aliases
+    owner: erik
+    group: erik
+- copy:
+    src: ./files/home/erik/.curlrc
+    dest: /home/erik/.curlrc
+    owner: erik
+    group: erik
+- copy:
+    src: ./files/home/erik/.gemrc
+    dest: /home/erik/.gemrc
+    owner: erik
+    group: erik
+- copy:
+    src: ./files/home/erik/.gitconfig
+    dest: /home/erik/.gitconfig
+    owner: erik
+    group: erik
+- copy:
+    src: ./files/home/erik/.npmrc
+    dest: /home/erik/.npmrc
+    owner: erik
+    group: erik

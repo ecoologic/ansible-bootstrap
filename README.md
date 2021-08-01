@@ -14,5 +14,6 @@ ansible-playbook local.yaml
 ```bash
 d run -v $(pwd):/home/erik/ansible-bootstrap -it --entrypoint /bin/bash ubuntu
 apt update && apt install sudo
+adduser erik
 ./scripts/install-ansible-ubuntu.sh # 4, 2
 ```
