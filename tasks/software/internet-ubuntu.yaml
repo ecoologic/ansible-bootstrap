@@ -15,8 +15,13 @@
     state: present
 - name: Install Brave - repo
   apt_repository:
+    # ??? somehow at this point a accrued a warning (or maybe running the above twice, or file renaming?)
+    # W: Target Packages (main/binary-amd64/Packages) is configured multiple times in /etc/apt/sources.list.d/dl_google_com_linux_chrome_deb.list:1 and /etc/apt/sources.list.d/google-chrome.list:3
     repo: "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
     update_cache: yes
 - name: Install Brave
   apt:
     pkg: brave-browser
+- name: Install Firefox
+  apt:
+    pkg: firefox
