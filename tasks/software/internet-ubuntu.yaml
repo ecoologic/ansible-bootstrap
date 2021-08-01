@@ -1,0 +1,27 @@
+- name: Install Chrome - key
+  apt_key:
+    url: https://dl.google.com/linux/linux_signing_key.pub
+    state: present
+- name: Install Chrome - repo
+  apt_repository:
+    repo: "deb http://dl.google.com/linux/chrome/deb/ stable main"
+    update_cache: yes
+- name: Install Chrome
+  apt:
+    pkg: google-chrome-stable
+- name: Install Brave - key
+  apt_key:
+    url: https://brave-browser-apt-release.s3.brave.com/brave-core.asc
+    state: present
+- name: Install Brave - repo
+  apt_repository:
+    repo: "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main"
+    update_cache: yes
+- name: Install Brave
+  apt:
+    pkg: brave-browser
+# $ sudo apt install apt-transport-https curl
+# $ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
+# $ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
+# $ sudo apt update
+# $ sudo apt install brave-browser

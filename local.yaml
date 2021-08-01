@@ -7,5 +7,6 @@
     - include: "tasks/dot-files.yaml"
     - include: "tasks/software/cli-utils.yaml"
     # - include: "tasks/software/vs-code.yaml" # Doesn't work in Docker
-    - include: "tasks/software/chrome.yaml"
+    - include: "tasks/software/internet-ubuntu.yaml"
+      when: ansible_facts.distribution == "Ubuntu"
     - include: "tasks/software/development-tools.yaml"
