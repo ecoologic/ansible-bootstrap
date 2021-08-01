@@ -1,3 +1,2 @@
 - name: "Hello World"
-  shell: "echo 'hello' > tmp/test.txt"
-  # command: ["echo", "hello world!"]
+  shell: "echo $(date) > tmp/test.txt"

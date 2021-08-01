@@ -6,5 +6,5 @@
 ./scripts/install-ansible-ubuntu.sh
 # If the previous command ends with
 # "Installation completed successfully"
-
+ansible-playbook local.yaml
 ```
