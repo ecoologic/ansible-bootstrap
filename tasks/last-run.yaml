@@ -1,2 +1,5 @@
+# - name: "Print all available facts"
+#   ansible.builtin.debug:
+#     var: ansible_facts
 - name: "Store the last run time"
   shell: "echo $(date) > tmp/last-run.txt"

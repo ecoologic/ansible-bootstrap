@@ -1,0 +1,10 @@
+- name: "Install basic CLI utils"
+  package:
+    name:
+      - htop
+      - vim
+- name: "Install Ubuntu CLI utils"
+  when: ansible_facts.distribution == "Ubuntu"
+  package:
+    name:
+      - dconf-cli # Dump settings with `dconf dump / > settings.ini`
