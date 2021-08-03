@@ -1,6 +1,11 @@
 ---
 - hosts: localhost
   become: true
+  pre_tasks:
+    - name: Update Repository Index
+      tags: always
+      apt:
+        update_cache: yes
   tasks:
     - include: "tasks/last-run.yaml"
     - include: "tasks/backup-dot-files.yaml"

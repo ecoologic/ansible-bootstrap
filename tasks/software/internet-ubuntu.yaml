@@ -9,6 +9,7 @@
 - name: Install Chrome
   apt:
     pkg: google-chrome-stable
+
 - name: Install Brave - key
   apt_key:
     url: https://brave-browser-apt-release.s3.brave.com/brave-core.asc
@@ -22,6 +23,25 @@
 - name: Install Brave
   apt:
     pkg: brave-browser
+
 - name: Install Firefox
   apt:
     pkg: firefox
+  # TODO: https://support.mozilla.org/en-US/kb/deploying-firefox-with-extensions
+  #       https://github.com/juju4/ansible-firefox-config
+  #       https://github.com/alzadude/ansible-firefox-addon
+
+- name: Install Peek - pre
+  apt:
+    pkg: software-properties-common
+- name: Install Peek - repo
+  apt_repository:
+    repo: "ppa:peek-developers/stable"
+    update_cache: yes
+- name: Install Peek (take git videos)
+  apt:
+    pkg: peek
+#   sudo apt install software-properties-common
+# sudo add-apt-repository ppa:peek-developers/stable
+# sudo apt update
+# sudo apt install peek
