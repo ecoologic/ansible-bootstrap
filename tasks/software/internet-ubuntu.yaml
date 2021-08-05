@@ -28,6 +28,7 @@
   apt:
     pkg: firefox
   # TODO: https://support.mozilla.org/en-US/kb/deploying-firefox-with-extensions
+  #       https://github.com/mozilla/policy-templates/blob/master/README.md
   #       https://github.com/juju4/ansible-firefox-config
   #       https://github.com/alzadude/ansible-firefox-addon
 
