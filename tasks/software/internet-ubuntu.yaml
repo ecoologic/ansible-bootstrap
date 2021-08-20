@@ -49,3 +49,6 @@
 - name: Install Xournal (annotate and sign PDFs)
   apt:
     pkg: xournal
+- name: Cheese (take selfies)
+  apt:
+    pkg: cheese
