@@ -46,3 +46,6 @@
 # sudo add-apt-repository ppa:peek-developers/stable
 # sudo apt update
 # sudo apt install peek
+- name: Install Xournal (annotate and sign PDFs)
+  apt:
+    pkg: xournal

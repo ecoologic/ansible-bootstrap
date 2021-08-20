@@ -2,6 +2,8 @@
 
 If your name is not `erik`, you have to rename some of this stuff.
 
+GOAL: Start a USB and install everything I need to develop in 1hour.
+
 ## Install
 
 ```shell
